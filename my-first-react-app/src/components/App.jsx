@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import '../styles/App.css'
 import Formulario from './Formulario.jsx'
+import MemoryGame from './MemoryGame.jsx'
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
           <Formulario />
         </div>
         <div className='ejemplos'>
-
+          <MemoryGame />
         </div>
     </div>
   )

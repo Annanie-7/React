@@ -2,6 +2,29 @@
   margin: 0 ;
   text-align: center;
 }
+/* GENERAL */
+
+p{
+  font-size: 14px;
+}
+
+label{
+  font-size: 12px;
+  width: 40%;
+  text-align: right;
+}
+
+h5{
+  margin: 15px;
+  font-size: 15px;
+}
+
+h2{
+  color:  #7e06ba
+}
+
+
+/* Class */
 
 .logo {
   height: 6em;
@@ -25,16 +48,6 @@
   margin: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
 .read-the-docs {
   color: #888;
 }
@@ -46,6 +59,7 @@
   font-size: 30px;
   min-height: 500px;
   padding-bottom: 30px;
+  align-items: start;
 }
 
 .textStyle{
@@ -55,20 +69,6 @@
   color:black;
 }
 
-label{
-  font-size: 12px;
-  width: 40%;
-  text-align: right;
-}
-
-h5{
-  margin: 15px;
-  font-size: 15px;
-}
-
-h2{
-  color:  #7e06ba
-}
 
 .navigation {
   border-width: 0 0 3px 0 ;
@@ -87,6 +87,9 @@ h2{
   width: 11%;
 }
 
+
+/* Formulario */
+
 .botonFormulario{
   background-color: #888;
   border-radius: 25px;
@@ -98,6 +101,34 @@ h2{
   display: flex;
 }
 
-p{
-  font-size: 14px;
+/* MEMORY GAME */
+.grid{
+  display: inline-block;
+  width:100%;
+  padding: 10px;
+  background-color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-color:#7e06ba;
+  border-radius: 10px;
 }
+
+.card {
+  max-width: 30%;
+  background-color: rgb(241, 240, 240);
+  border-width: 3px;
+  border-style: solid;
+  border-color:#7e06ba;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+
+/* Animation */
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
