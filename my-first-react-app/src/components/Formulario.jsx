@@ -2,11 +2,12 @@ import Informacion from './Informacion.jsx'
 import { useState } from 'react';
 
 function Formulario(){
-        const [general,setGeneral] = useState("");
+    //REAL TIME PHARAGRAPH TRACKING
+        const [general,setGeneral] = useState("");              
         const [educacion,setEducation] = useState("");
         const [experiencia,setExperiencia] = useState(""); 
 
-        function handleGeneral() {
+        function handleGeneral() {  //REAL TIME PHARAGRAPH TRACKING FOR GENERAL INFORMATION
             var nombre = document.getElementById("NombreEjemploform").value;
             var email = document.getElementById("EmailEjemploform").value;
             var telefono = document.getElementById("TelefonoEjemploform").value;
@@ -14,7 +15,7 @@ function Formulario(){
             setGeneral("Nombre: "+ nombre + " Email:" + email + "\n Telefono: " + telefono );
         }
 
-        function handleEducacion() {
+        function handleEducacion() {//REAL TIME PHARAGRAPH TRACKING FOR EDUCATION INFORMATION
             var nombre = document.getElementById("NombreInstitucionEjemploform").value;
             var carrera = document.getElementById("CarreraEstudiadaEjemploform").value;
             var graduacion = document.getElementById("FechaGraduacionEjemploform").value;
@@ -22,7 +23,7 @@ function Formulario(){
             setEducation("Nombre: "+ nombre + " Carrera:" + carrera + "Fecha graduacion: " + graduacion );
         }
 
-        function handleExperiencia() {
+        function handleExperiencia() {//REAL TIME PHARAGRAPH TRACKING FOR EXPERIENCE INFORMATION
             var nombre = document.getElementById("NombreCompañiaEjemploform").value;
             var posicion = document.getElementById("PosicionEjemploform").value;
             var Responsabilidades = document.getElementById("ResponsabilidadesEjemploform").value;
